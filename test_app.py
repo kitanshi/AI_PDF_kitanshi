@@ -6,3 +6,7 @@ def test_pdf_extraction():
         with open("sample.pdf", "rb") as f:
             data = f.read()
             assert data == mock_pdf_data
+
+import torch
+print(torch.__version__)
+print(torch.cuda.is_available())
